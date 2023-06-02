@@ -1,0 +1,173 @@
+/* !!!!!!!!!!!!!!!   Font EB Garamond !!!!!!!!!!!!!!! */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=EB+Garamond&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+/* !!!!!!!!!!!!!!!  !!!!!!!!!!!!!!!  !!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!!!!  Font Bebas Neue !!!!!!!!!!!!!!! */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Bebas+Neue&family=EB+Garamond&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+/* !!!!!!!!!!!!!!!  !!!!!!!!!!!!!!!  !!!!!!!!!!!!!!! */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* !!!!!!!!!!!!!!!  FONTES E PALETA DE CORES !!!!!!!!!!!!!!!  */
+:root{
+    --font-primary: "EB Garamond", serif;
+    --font-action: "Bebas Neue", serif; 
+    --White: #f2e6e6;
+    --Red1: #ad2020;
+    --Red2: #560909;
+    --Red3: #190000;
+}
+/* !!!!!!!!!!!!!!!  !!!!!!!!!!!!!!!  !!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!!!!  IMAGEM DE FUNDO !!!!!!!!!!!!!!!  */
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+  z-index: 0;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+/* !!!!!!!!!!!!!!! !!!!!!!!!!!!!!!  !!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!!!! QUADRO BRANCO !!!!!!!!!!!!!!! */
+#page-wrap {
+    position: relative; 
+    width: 500px;
+    height: auto;
+    margin: 50px auto;
+    padding: 20px;
+    background: white; 
+    box-shadow: 0 0 20px #ad2020; 
+    border-radius: 5px;
+    overflow-x: auto;
+    z-index: 1;
+}
+/* !!!!!!!!!!!!!!! !!!!!!!!!!!!!!!  !!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!!!! ESTILIZAÇÃO DO TEXTO !!!!!!!!!!!!!!! */
+#text {
+   font-size: 25px;
+   font-family: var(--font-primary);
+   margin: 0 0 30px 0;
+   letter-spacing: 0.5px;
+   font-weight: bold;
+}
+/* !!!!!!!!!!!!!!! !!!!!!!!!!!!!!!  !!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!!!! BOTÕES/OPÇÕES !!!!!!!!!!!!!!! */
+.btn-grid {
+display: grid;
+gap: 10px;
+margin-top: 20px;
+}
+
+.btn{
+   background-color: var(--Red1);
+   border: 2px solid var(--White);
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    font-family: var(--font-action);
+    font-size: 17px;
+    color: var(--White);
+    outline: none;
+    padding: 3px 3px;
+    transition: color,border,1s;
+}
+
+.btn:hover {
+border-color: var(--Red3);
+color: var(--Red3);
+}
+/* !!!!!!!!!!!!!!! !!!!!!!!!!!!!!!  !!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!!!! CONTADOR DE PÁGINAS !!!!!!!!!!!!!!! */
+#page-nm {
+ visibility: hidden;
+ height: 0;
+ width: 0;
+}
+/* !!!!!!!!!!!!!!! !!!!!!!!!!!!!!!  !!!!!!!!!!!!!!! */
+
+/* !!!!!!!!!!!!!!! MENU LATERAL !!!!!!!!!!!!!!! */
+
+/* POSICIONAMENTO DO MENU E ESTILIZAÇÃO */
+.sidenav {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 2; 
+  top: 0; 
+  right: 0;
+  background-color: var(--Red1);
+  overflow-x: hidden;
+  padding-top: 60px; 
+  transition: 1s; 
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* OPÇÕES DO MENU */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  color: var(--White);
+  display:block;
+  transition: color 1s;
+  font-family: var(--font-action);
+}
+
+.sidenav a:hover {
+  color: var(--Red2);
+}
+
+/* FECHAR MENU */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.sidenav .closebtn:hover{
+  color: var(--Red2);
+}
+
+/* ACESSAR MENU */
+.openbtn {
+  font-family: var(--font-action);
+  position: fixed;
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+    color: var(--Red2);
+    cursor: pointer;
+    transition: color,border,1s;
+    letter-spacing: 0.5px;
+    z-index: 1;
+    border: 2px solid var(--Red2);
+}
+
+.openbtn:hover{
+  color: var(--Red1);
+  border-color: var(--Red1);
+}
+/*!!!!!!!!!!!!!!! !!!!!!!!!!!!!!! !!!!!!!!!!!!!!! */

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK COM ARQUIVO CSS -->
+    <link rel="stylesheet" href="STYLE.CSS">
+    <!------------------------------------------------------->
+
+    <title>PROJETO INTEGRADO</title>
+
+</head>
+<body>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <!-- MENU LATERAL -->
+    <div id="mySidenav" class="sidenav">
+      
+      <!-- BOTÃO PARA FECHAR MENU -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+
+      <!-- REINICIAR PROGRESSO -->
+      <a href="javascript:void(0)" onclick="res()">Reiniciar progresso</a>
+
+      <!-- SALVAR E CARREGAR PROGRESSO -->
+      <a href="javascript:void(0)" id="sg" onclick="save()">Salvar progresso</a>
+      <a href="javascript:void(0)" onclick="load()">Carregar progresso</a>
+    </div>
+    
+  <!-- BOTÃO PARA ACESSAR MENU LATERAL -->
+    <span class ="openbtn" onclick="openNav()"> <strong> ☰ </strong> </span>
+
+  <!-- QUADRO BRANCO (WRAPPER) -->
+    <div id="page-wrap">
+
+  <!-- ESPAÇO PARA INSERIR AS IMAGENS -->
+    <div id="img-cnt"> </div>
+
+  <!-- ESPAÇO RESERVADO PARA OS TEXTOS-->
+    <div id="text"> </div>
+
+  <!-- BOTÕES/OPÇÕES -->
+    <div id="opt-btns" class="btn-grid">
+    <button class="btn">Opção</button>
+    </div>
+
+    <!-- CONTADOR DE PÁGINAS (NÃO VISÍVEL PARA O USUÁRIO) -->
+    <div id="page-nm">  </div>
+        
+  </div>
+    <!------------------------------------------------------->
+
+    <!-- IMAGEM DE FUNDO (BACKGROUND)-->
+    <div id="bg">
+        <img src="IMG/BG 2.jpeg" alt="">
+      </div>
+    <!------------------------------------------------------->
+
+</body>
+
+ <!-- LINK COM O ARQUIVO JAVASCRIPT -->
+ <script src="RESPONSIVIDADE.JS"></script>
+ <!------------------------------------------------------->
+
+</html>
